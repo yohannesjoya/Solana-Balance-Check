@@ -3,7 +3,9 @@
 }
 
 .AppHeader {
-  background-color: #282c34;
+  background: linear-gradient(to bottom right, #222222, #333333, #008080);
+  background-size: 200% 200%;
+  animation: shinyBackground 10s ease infinite;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,4 +13,18 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+
+
+@keyframes shinyBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
